@@ -1,0 +1,211 @@
+body, body * {
+    font-family: 'Montserrat', sans-serif;
+    color: #494949;
+}
+
+body {
+    background-color: #40363d1a;
+}
+
+/*top navbar*/
+.logo{
+    background-image: url('images/logo.png');
+    background-position: center;
+    background-size: cover;
+    width: 55px;
+    height: 48px;
+}
+
+.web-logo-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.web-name{
+    color: #e33a5d;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.country{
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 1000px;
+    margin-right: 13px;
+}
+#england{
+    background-image: url('images/en-flag.png');
+}
+
+#pak{
+    background-image: url('images/ur-flag.png');
+}
+
+#chinese{
+    background-image: url('images/zh-flag.png');
+}
+
+.country-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*main navbar*/
+
+div#navbarNav.collapse.navbar-collapse{
+    justify-content: flex-end;
+}
+
+/*nav.navbar.navbar-expand-lg{
+    background-color: #494949 !important;
+    height: 45px;
+}
+
+.collapse.navbar-collapse{
+      background-color: #494949 !important;
+}
+
+.nav-link {
+    color: #ebf5eb !important;
+}*/
+
+/*main contain*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 58% 41%;
+    grid-gap: 12px;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.left-div{
+    width: 100%;
+    /*height: 100vh;*/
+    /*background-color: #ffffff;*/ 
+}
+
+.right-div{
+    width: 100%;
+    /*height: 100vh;*/
+    
+}
+
+.flower-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 83px;
+    /*background-color: #ebf5eb;*/
+   
+}
+
+.techkro-heading{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.techkro-heading p, .learn-more {
+    background-color: green;
+    color: #ffffff;
+    margin-bottom: 0;
+    height: 36px;
+    padding: 9px;
+}
+
+.learn-more{
+    width: 61%;
+    font-size: 14px;
+}
+
+.sale-contain{
+     background-color: #ffffff;
+     width: 100%;
+     /*border: 1px solid #dddedd;*/
+}
+
+.sale-contain h4{
+    font-size: 17px;
+    margin: 16px;
+    font-weight: bold;
+     color: #4b4c4e;
+}
+
+.sale-contain p{
+    margin: 16px;
+    color: #4b4c4e;
+}
+
+.main-img{
+    
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+   
+}
+
+.date-time{
+    width: 100%;
+    height: 30px;
+}
+
+.flower-detail{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+.flower-detail h4{
+    margin-left: 16px;
+    font-weight: bold;
+     color: #4b4c4e;
+}
+
+.flower-detail p{
+     color: #4b4c4e;
+}
+
+.sale-contain, .flower-detail, .date-time, .main-img{
+    border: 1px solid #dddedd
+}
+
+
+
+
+@media screen and (max-width : 768px){
+    .grid-container{
+        grid-template-columns : auto;
+    }
+    .learn-more{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width : 769px){
+    .learn-more{
+        width: 47%;
+    }
+}
+
+
+
+
+
+
+/* Write all your CSS here! */
