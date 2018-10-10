@@ -27,8 +27,10 @@
     <!-- As a link -->
     <nav class="navbar navbar-light bg-light">
         <div class="web-logo-div">
-            <div class="logo"><a class="navbar-brand" href="#"></a></div>
-            <p class="web-name">TECH KRO</p>
+            <div class="logo">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <p class="web-name"><span class="big">T</span>ech <span class="big">K</span>aro</p>
         </div>
         <div class='country-div'>
             <div class="country" id="england" onclick="showContant('en')"></div>
@@ -39,7 +41,7 @@
 
     <!--main nav-->
     <header>
-        <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark main-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-nav">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -47,21 +49,9 @@
         </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">press <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">hiring headquarters</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">enterprise</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">privacy</a>
-                    </li>
                 </ul>
             </div>
-        </nav>-->
+        </nav>
     </header>
 
     <!-- main contain-->
@@ -81,23 +71,33 @@
         <div class="grid-container">
             <div class="left-div">
                 <div class="main-img"></div>
+
                 <div class="date-time">
-                    <span class="month"></span>
-                    <span class="date"></span>
-                    <span class="year"></span>
-                    <span class="time"></span>
+                    <div class="date-div">
+                        <i class="fas fa-calendar-alt"></i>
+                        <p class="full-date"></p>
+                    </div>
+
+                    <div class="tech-community">
+                        <i class="fas fa-user-alt"></i>
+                        <p class="by">
+                            by
+                            <span class="community"> TechKaro community</span>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="flower-detail">
                     <h4></h4>
-                    <p>
-                        <p>
+                    <p><p>
                 </div>
             </div>
             <div class="right-div">
-                <p class="learn-more">
-                    New to TechKro? Learn More >
-                </p>
+                <div>
+                    <p class="learn-more">
+                        New to TechKro? Learn More >
+                    </p>
+                </div>
                 <div class="sale-contain">
                     <h4></h4>
                     <p class="para"></p>
@@ -106,10 +106,6 @@
             </div>
         </div>
     </section>
-
-
-
-
 </body>
 
 </html>

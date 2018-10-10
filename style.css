@@ -4,10 +4,15 @@ body, body * {
 }
 
 body {
-    background-color: #40363d1a;
+    background-color: #ebf5eb;
 }
 
-/*top navbar*/
+/*
+****************
+  top navbar
+****************
+*/
+
 .logo{
     background-image: url('images/logo.png');
     background-position: center;
@@ -36,6 +41,7 @@ body {
     height: 30px;
     border-radius: 1000px;
     margin-right: 13px;
+    cursor: pointer;
 }
 #england{
     background-image: url('images/en-flag.png');
@@ -55,26 +61,27 @@ body {
     align-items: center;
 }
 
-/*main navbar*/
+.big{
+    font-size:30px;
+    color: #e33a5d;
+}
+
+/*
+****************
+  main navbar
+****************
+*/
 
 div#navbarNav.collapse.navbar-collapse{
     justify-content: flex-end;
 }
 
-/*nav.navbar.navbar-expand-lg{
-    background-color: #494949 !important;
-    height: 45px;
-}
 
-.collapse.navbar-collapse{
-      background-color: #494949 !important;
-}
-
-.nav-link {
-    color: #ebf5eb !important;
-}*/
-
-/*main contain*/
+/*
+****************
+  main contain
+****************
+*/
 
 .container{
     display: flex;
@@ -88,19 +95,14 @@ div#navbarNav.collapse.navbar-collapse{
     grid-gap: 12px;
     width: 100%;
     height: 100vh;
-    
 }
 
 .left-div{
     width: 100%;
-    /*height: 100vh;*/
-    /*background-color: #ffffff;*/ 
 }
 
 .right-div{
     width: 100%;
-    /*height: 100vh;*/
-    
 }
 
 .flower-header {
@@ -109,19 +111,17 @@ div#navbarNav.collapse.navbar-collapse{
     justify-content: flex-end;
     width: 100%;
     height: 83px;
-    /*background-color: #ebf5eb;*/
-   
 }
 
 .techkro-heading{
     width: 100%;
-    height: 100px;
+    height: 60px;
     display: flex;
     align-items: flex-end;
 }
 
 .techkro-heading p, .learn-more {
-    background-color: green;
+    background-color: #2da745;
     color: #ffffff;
     margin-bottom: 0;
     height: 36px;
@@ -129,14 +129,14 @@ div#navbarNav.collapse.navbar-collapse{
 }
 
 .learn-more{
-    width: 61%;
+    width: 238px;
     font-size: 14px;
+    
 }
 
 .sale-contain{
      background-color: #ffffff;
      width: 100%;
-     /*border: 1px solid #dddedd;*/
 }
 
 .sale-contain h4{
@@ -161,8 +161,33 @@ div#navbarNav.collapse.navbar-collapse{
 }
 
 .date-time{
+    display: flex;
     width: 100%;
-    height: 30px;
+    height: 50px;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.date-div, .tech-community{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-date, span, .by{
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.fas{
+    font-size: 19px;
+    margin: 0px 11px;
+    color: #2da745;
+}
+
+.community{
+    color: #2da745;
 }
 
 .flower-detail{
@@ -172,7 +197,6 @@ div#navbarNav.collapse.navbar-collapse{
 }
 
 .flower-detail h4{
-    margin-left: 16px;
     font-weight: bold;
      color: #4b4c4e;
 }
@@ -185,22 +209,32 @@ div#navbarNav.collapse.navbar-collapse{
     border: 1px solid #dddedd
 }
 
-
-
+@media screen and (max-width : 991px){
+    .full-date, span, .by{
+        font-size: 12px;
+    }
+    .fas{
+        font-size: 16px;
+    }
+}
 
 @media screen and (max-width : 768px){
     .grid-container{
         grid-template-columns : auto;
     }
-    .learn-more{
-        width: 47%;
-    }
 }
 
-@media screen and (max-width : 769px){
-    .learn-more{
-        width: 47%;
+@media screen and (max-width : 461px){
+    .date-time{
+        height: 52px;
     }
+    .full-date, span, .by{
+        font-size: 13px;
+    }
+    .fas{
+        font-size: 17px;
+    }
+
 }
 
 
